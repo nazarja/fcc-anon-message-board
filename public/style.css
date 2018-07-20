@@ -1,0 +1,315 @@
+
+/************* Google Fonts  *************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Special+Elite');
+
+
+
+/************* General  *************/
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  font-family: 'Special Elite', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  padding: 50px 0 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: .95em;
+}
+
+p {
+  font-size: 0.90em;
+}
+
+li {
+  font-size: .85em;
+  list-style-type: square;
+  line-height: 1.6em;
+}
+
+a, a:active, a:visited {
+  color: #3661A2;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+b {
+  color: #b10000;
+}
+
+i {
+  color: #3661A2;
+}
+
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #dcdcdc;
+}
+
+
+/************* Inputs  *************/
+input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #888;
+  border-radius: 30px;
+  height: 30px;
+  padding-left: 20px; 
+  font-family: 'Open Sans', san-serif;
+  min-width: 250px;
+  margin-top: -5px;
+}
+
+input[type="submit"], button[type="submit"], button {
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0);
+  background-color: RGB(0,120,215);
+  min-width: 100px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-family: 'Open Sans', san-serif;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+textarea {
+  min-width: 250px;
+  min-height: 100px;
+  margin: 5px 0 5px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  padding: 10px 0 0 20px;
+  resize: vertical;
+}
+
+label {
+  margin-top: 15px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/************* Overrides  *************/
+
+#userstories, .userstories {
+  padding-top: 0;
+  margin-top: 30px;
+}
+
+.form {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 33%;
+  vertical-align: top;
+}
+
+.jsonresult {
+  background-color: #dcdcdc;
+  padding: 20px 30px;
+  margin: 20px 0 40px;
+  border-radius: 10px;
+}
+
+#testui {
+  background-color: #dcdcdc;
+  padding: 20px 30px;
+  margin: 20px 0 20px;
+  border-radius: 10px;
+}
+
+img {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+#golink {
+  font-size: 1.2em;
+  text-decoration: underline;
+  margin: 0px 0 30px;
+  display: inline-block;
+}
+
+
+.listWrapper {
+  padding-left: 20px;
+}
+
+
+/************* Replies  *************/
+
+.main {
+  padding: 15px 0 25px 35px;
+  border-radius: 10px;
+}
+
+.main h3 {
+  font-size: 1.5em;
+}
+
+.reply {
+  background-color: #e8e8e8;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  margin: 25px 16px;
+  padding: 15px;
+}
+
+.reply form {
+  display: inline-block;
+}
+
+.newReply {
+  margin: 10px 5px 10px 35px;
+}
+
+.thread {
+  border: 2px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.id {
+  font-size: 10.5px;
+}
+
+#submitNewThread {
+  margin: 50px;
+}
+
+#deleteReply input[type="text"] {
+  margin-top: 20px;
+}
+
+#deleteReply input[type="submit"] {
+  margin-left: 20px;
+  background-color: indianred;
+}
+
+#submitReplyTextarea {
+  width: 60%;
+}
+
+
+/************* Threads  *************/
+.thread {
+  border: 2px solid #656565;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+#reportThread {
+	display: inline-block;
+}
+
+#reportThread input {
+/* 	background-color: indianred; */
+}
+
+#deleteThread{
+	display: inline-block;
+}
+
+#deleteThread input[type="submit"] {
+	 background-color: indianred;
+	 margin-left: 25px;
+}
+
+
+
+/************* Media Quieries  *************/
+@media (max-width: 1024px) {
+  img {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  #firsth4 {
+    margin-top: 0;
+  }
+  .form {
+    width: 90%;
+    padding-top: 30px;
+    margin: auto;
+    margin-left: 10px;
+    display: flex;
+    align-items: inherit;
+  }
+  #testui {
+    padding: 20px 10px;
+  }
+  input[type="text"] {
+    min-width: null;
+  }
+  textarea {
+    min-width: null;
+  }
+  body {
+    max-width: 1100px;
+    margin: 0 15px;
+  }
+  input[type="submit"] { 
+    max-width: 100px;
+  }
+  #deleteReply input[type="submit"] {
+    margin-left: 0;
+    min-width: 100px;
+  }
+  
+  
+  .thread {
+    padding: 0;
+  }
+  #threadTitle {
+    font-size: 1em;
+  }
+  #deleteThread input[type="submit"] {
+    margin-left: 0;
+  }
+  #reportThread input {
+    margin-bottom: 25px;
+  }
+  .main {
+    padding: 15px 0 25px 30px;
+  }
+}
+
